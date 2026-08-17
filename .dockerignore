@@ -1,0 +1,9 @@
+.git/
+.gitignore
+.idea/
+*.iml
+uploads/
+ticketdesk-frontend/
+*.log
+README.md
+docker-compose.yml
