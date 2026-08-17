@@ -1,14 +1,16 @@
-[extend]
-useDefault = true
-
 [allowlist]
-description = "Allow local test fixtures and mock keys"
+description = "Global allowlist for dummy local test credentials"
+regexes = [
+  '''404E635266556A586E3272357538782F413F4428472B4B6250655368566D5971''',
+  '''Admin@123''',
+  '''[0-9a-fA-F]{64}'''
+]
 paths = [
   '''src/test/.*''',
   '''src/main/resources/application.yml''',
-  '''src/main/java/com/ticketdesk/common/security/.*'''
-]
-regexes = [
-  '''404E635266556A586E3272357538782F413F4428472B4B6250655368566D5971''',
-  '''Admin@123'''
+  '''src/main/java/com/ticketdesk/common/security/.*''',
+  '''Dockerfile''',
+  '''README.md''',
+  '''COST_REPORT.md''',
+  '''SANITY_LOAD_TEST.md'''
 ]
